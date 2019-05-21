@@ -2,6 +2,10 @@
 
 A MUI component made with hooks compatible with MUI >= 4.0.0
 
+## Demo
+
+[![Edit magical-poitras-685c4](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-poitras-685c4?fontsize=14)
+
 ## Install 
 
 ```sh
@@ -49,3 +53,11 @@ function App() {
 
 ## Props
 
+| Prop  | Description | Default value |
+| --- | ------ | --- |
+| buttonProps | props injected to the button component | {} |
+| classes | classes object for custom styling | {} |
+| color | Selector color ['primary', 'secondary'] | 'primary'
+| onChange | callback to handle option click | () => null
+| options | options array of objects in the form: {label, value} | []
+| value | selected value that will be shown in the component | null
