@@ -1,7 +1,7 @@
 {
   "name": "mui-segmented-control",
   "version": "1.0.0",
-  "description": "",
+  "description": "A plugin for https://github.com/mui-org/material-ui that creates a segmented control component",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot",
@@ -43,7 +43,24 @@
       "react-hot-loader/babel"
     ]
   },
-  "keywords": [],
-  "author": "Ninh Pham",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getapper/mui-segmented-control.git"
+  },
+  "keywords": [
+    "mui",
+    "material",
+    "ui",
+    "segmented",
+    "control",
+    "component",
+    "react",
+    "hooks"
+  ],
+  "author": "Getapper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/getapper/mui-segmented-control/issues"
+  },
+  "homepage": "https://github.com/getapper/mui-segmented-control#readme"
 }
