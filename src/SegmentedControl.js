@@ -52,7 +52,7 @@ export const styles = (theme) => {
   };
 };
 
-function DegreeSwitch({
+function SegmentedControl({
   buttonProps,
   classes,
   color,
@@ -123,7 +123,7 @@ function DegreeSwitch({
   );
 }
 
-DegreeSwitch.propTypes = {
+SegmentedControl.propTypes = {
   buttonProps: shape({}),
   classes: shape({}),
   color: oneOf(['primary', 'secondary']),
@@ -135,7 +135,7 @@ DegreeSwitch.propTypes = {
   value: oneOfType([string, number])
 };
 
-DegreeSwitch.defaultProps = {
+SegmentedControl.defaultProps = {
   buttonProps: {},
   classes: {},
   color: 'primary',
@@ -143,4 +143,4 @@ DegreeSwitch.defaultProps = {
   value: null
 };
 
-export default withStyles(styles)(DegreeSwitch);
+export default withStyles(styles)(SegmentedControl);
