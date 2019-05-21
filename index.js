@@ -1,1 +1,3 @@
-export default './src/SegmentedControl';
+import SegmentedControl from './src/SegmentedControl';
+
+export default SegmentedControl;
