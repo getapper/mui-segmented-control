@@ -16,7 +16,7 @@ npm install mui-segmented-control
 
 ```jsx
 import React, { useState } from 'react';
-import SegmentedControl from './SegmentedControl';
+import SegmentedControl from 'mui-segmented-control';
 
 function App() {
   const [value, setValue] = useState();
