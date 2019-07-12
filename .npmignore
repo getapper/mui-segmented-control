@@ -3,6 +3,10 @@ node_modules
 .eslintrc.json
 .gitignore
 webpack.config.js
-src/index.js
-src/App.js
+src/*
+examples
 package-lock.json
+demo/
+dist/
+tests/
+src/
