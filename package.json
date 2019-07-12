@@ -1,6 +1,6 @@
 {
   "name": "mui-segmented-control",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A plugin for https://github.com/mui-org/material-ui that creates a segmented control component",
   "main": "dist-modules",
   "module": "dist-es6",
