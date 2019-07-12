@@ -5,7 +5,7 @@ const { env } = process;
 
 const options = {
   mode: env.NODE_ENV,
-  entry: './src/index.js',
+  entry: './examples/index.js',
   output: {
     filename: '[name].js'
   },

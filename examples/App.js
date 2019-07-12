@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { hot } from 'react-hot-loader/root';
-import SegmentedControl from './SegmentedControl';
+import SegmentedControl from '../src';
 
 function App() {
   const [value, setValue] = useState();

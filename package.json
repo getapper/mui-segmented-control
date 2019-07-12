@@ -2,23 +2,31 @@
   "name": "mui-segmented-control",
   "version": "1.0.2",
   "description": "A plugin for https://github.com/mui-org/material-ui that creates a segmented control component",
-  "main": "index.js",
+  "main": "dist-modules",
+  "module": "dist-es6",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "dist:es6": "del-cli ./dist-es6 && cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6  && cp ./src/*.css ./dist-es6",
+    "dist:modules": "del-cli ./dist-modules && cross-env BABEL_ENV=modules babel ./src --out-dir ./dist-modules && cp ./src/*.css ./dist-modules",
+    "prepublishOnly": "npm run dist:es6 && npm run dist:modules"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.2.0",
+    "del-cli": "^1.1.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
@@ -31,7 +39,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "peerDependencies": {
-    "@material-ui/core": "^4.0.0-rc.0",
+    "@material-ui/core": "^4.0.0",
     "react": ">= 16.8.1"
   },
   "babel": {
